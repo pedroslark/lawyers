@@ -22,8 +22,6 @@ class ClientsController < ApplicationController
 		  if law.state == @client.state
         # Retorna o advogado disponivel
 			  @lawyer = law
-      else
-        @lawyer
 		  end
 
 	  end
