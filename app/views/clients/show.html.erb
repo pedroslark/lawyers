@@ -17,8 +17,13 @@
 
   <h3>Advogado(a) Disponível:</h3>
 
+    <!-- Se não houver advogados disponiveis -->
+  <% if @lawyer.nil? %>
+    <h4>Nenhum!</h4>
+  <% else %>
     <!-- Pega o advogado que foi selecionado no controller -->
     <li><%= @lawyer.name %>: <%= @lawyer.state %></li>
+  <% end %>
 
   <br>
 

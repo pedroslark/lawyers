@@ -23,7 +23,6 @@ class ClientsController < ApplicationController
         # Retorna o advogado disponivel
 			  @lawyer = law
 		  end
-
 	  end
   end
 
