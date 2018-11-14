@@ -1,0 +1,27 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <h3>Cliente Selecionado:</h3>
+
+  <p>
+    <strong>Nome:</strong>
+    <%= @client.name %>
+  </p>
+
+  <p>
+    <strong>Estado:</strong>
+    <%= @client.state %>
+  </p>
+
+  <br>
+
+  <h3>Advogado(a) Disponível:</h3>
+
+    <!-- Pega o advogado que foi selecionado no controller -->
+    <li><%= @lawyer.name %>: <%= @lawyer.state %></li>
+
+  <br>
+
+  <%= link_to 'Editar', edit_client_path(@client) %> |
+  <%= link_to 'Voltar', clients_path %>
+</div>
